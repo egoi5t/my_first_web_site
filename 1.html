@@ -3,17 +3,29 @@
     <title>WEB1 - html</title>
     <meta charset="utf-8">
     <style>
-        a {
-            color:red;
+        a { <!-- 선택자(셀렉터) -->
+	<!-- 선언,효과(디컬러레이션) -->	color:black; <!-- 속성(프로퍼티) -->
+			text-decoration: none;
         }
+		h1 {
+			font-size: 70px;
+			text-align: center;
+		}		
+		#active {
+			color:red;
+		}
+		.saw {
+			color:gray;
+		}
+
     </style>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <ol>
-    <li>HTML</li>
-    <li>CSS</li>
+	  <li><a href="https://youtu.be/h0AlL9YI6bM" class="saw">HTML</a></li>
+    <li><a href="https://youtu.be/h0AlL9YI6bM" class="saw" id="active">CSS</a></li>
   </ol>
 
   <h2>HTML</h2>
