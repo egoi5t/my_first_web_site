@@ -3,34 +3,49 @@
     <title>WEB1 - html</title>
     <meta charset="utf-8">
     <style>
-        a { <!-- 선택자(셀렉터) -->
-	<!-- 선언,효과(디컬러레이션) -->	color:black; <!-- 속성(프로퍼티) -->
+        /* 선언,효과(디컬러레이션) 선택자(셀렉터) 속성(프로퍼티)  */
+        a { 
+        	color:blue;
 			text-decoration: none;
         }
 		h1 {
 			font-size: 70px;
 			text-align: center;
-		}		
-		#active {
-			color:red;
+            border-bottom: 1px solid gray;
+            mragin: 0;
+            padding:20px;
 		}
-		.saw {
-			color:gray;
-		}
-
+        ol{
+            border-right:1px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+        }
+        body{
+            margin: 0;
+        }
+        
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
     </style>
 </head>
 
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-	  <li><a href="https://youtu.be/h0AlL9YI6bM" class="saw">HTML</a></li>
-    <li><a href="https://youtu.be/h0AlL9YI6bM" class="saw" id="active">CSS</a></li>
-  </ol>
-
-  <h2>HTML</h2>
-  <p><a href="https://www.youtube.com/watch?v=V3pkC1hE-as&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=14">
-  hypertext</a>
-
+  <h1><a href="index.html">King Gnu</a></h1>
+<div id="grid">
+  <div>
+      <ol>
+    	  <li><a href="https://youtu.be/h0AlL9YI6bM">King Gnu</a></li>
+          <li><a href="https://youtu.be/h0AlL9YI6bM">MILLENNIUM PARADE</a></li>
+      </ol>
+  </div>
+  <div>
+    <h2>King Gnu</h2>
+    <p><a href="https://www.youtube.com/watch?v=V3pkC1hE-as&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=14">King Gnu</a>는 일본의 4인조 남성 록 밴드다<br>밴드명인 King Gnu는 킹 그누가 아니라 '킹 누'라 읽으며, '누'는 아프리카에서 서식하는 소과의 동물인데, 이들은 평소에 몇 십 마리 에서 몇 백 마리 정도 무리지어 다니지만 봄이 오면 그 무리의 규모는 몇 십만 마리 로 늘어난다고 한다. 이런 누의 습성과 같이 King Gnu는 남녀노소 가리지 않고 끌어모아 큰 무리를 이루고 싶다는 의미에서 지은 이름이다.
+    </p>
+  </div>
+</div>
 </body>
 </html>
