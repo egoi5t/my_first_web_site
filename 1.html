@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <style>
         /* 선언,효과(디컬러레이션) 선택자(셀렉터) 속성(프로퍼티)  */
-        a { 
+        a {
         	color:blue;
 			text-decoration: none;
         }
@@ -28,6 +28,18 @@
         #grid{
             display:grid;
             grid-template-columns: 150px 1fr;
+        }
+
+        @media(max-width:800px){
+            #grid{
+                display: block;
+            }
+            ol{
+                border-right:none;
+            }
+            h1{
+                border-bottom:none;
+            }
         }
     </style>
 </head>
